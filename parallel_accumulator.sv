@@ -64,7 +64,7 @@ module parallel_accumulator #(
   always_ff @(posedge clk or negedge rst) begin
     if (rst)
       data_out <= '0;
-    else
+    else if (en)
       data_out <= accum_full_ovrflo == 1'b1 ? 64'b1 : data_nxt[ACC_WIDTH-1:0];
   end
   
