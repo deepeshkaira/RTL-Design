@@ -65,7 +65,7 @@ module parallel_accumulator #(
     if (rst)
       data_out <= '0;
     else
-      data_out <= accum_full_ovrflo === 1'b1 ? 64'b1 : data_nxt[ACC_WIDTH-1:0];
+      data_out <= accum_full_ovrflo == 1'b1 ? 64'b1 : data_nxt[ACC_WIDTH-1:0];
   end
   
 endmodule
