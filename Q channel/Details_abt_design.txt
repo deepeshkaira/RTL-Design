@@ -1,0 +1,4 @@
+Following modules are working correctly and have been verified too
+1. Design_qc
+2. dff
+3. fifo_design_correct
